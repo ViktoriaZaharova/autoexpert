@@ -175,10 +175,15 @@ h1
 
 //header
 header
-  padding: 10px 0
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.03)
   background: #fff
-  border: 1px solid #EAEAEA
+
+.header-top
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.03)
+  border-bottom: 1px solid #EAEAEA
+  padding: 10px 0
+
+.header-bottom
+  display: none
 
 .logo
   display: flex
@@ -301,10 +306,10 @@ header
 
   .menu
     width: 100%
-
-  .nav-item
-    width: 100%
-    margin: 0 0 20px
+    font-size: 13px
+    .nav-item
+      width: 100%
+      margin: 0 0 20px
 
   .dropdown-toggle__icon
     width: 6px
@@ -374,6 +379,8 @@ header
     display: inline-block
     font-weight: bold
     color: $blue
+    margin: 0
+    font-size: 14px
 
 .btn-search-details
   color: #B41818
@@ -410,7 +417,9 @@ header
   label
     margin: 0 30px 15px 0
     max-width: 160px
-
+  .label-val
+    max-width: 68px
+    margin: 0 0 15px
 
 .form-group
   display: flex
@@ -429,8 +438,8 @@ header
 .nav-tabs
   width: 100%
   display: flex
-  align-items: flex-start
-  flex-wrap: wrap
+  align-items: stretch
+  flex-wrap: nowrap
   border: none
     radius: 0
   position: relative
@@ -442,14 +451,19 @@ header
     &:last-child
       margin: 0
   .nav-link
+    height: 100%
     border: 1px solid transparent
       radius: 2px 2px 0 0
+      bottom: none
     background: #EAEAEA
     padding: 12px 10px
     color: #828282
     font-size: 14px
     width: 160px
     text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
     transform: translateY(4px)
   .active
     border: 1px solid #EAEAEA
@@ -461,7 +475,7 @@ header
 
 .tab-content
   padding: 20px 0 0
-  margin: -2px 0 0
+  margin: -1px 0 0
   border: 1px solid #EAEAEA
     radius: 2px
   .card-header
@@ -540,6 +554,9 @@ header
 
 .bg-blue
   background: #6D9DE3
+
+.bg-grey
+  background: #A6A6A6
     
 .text-left
   justify-content: flex-start
@@ -571,7 +588,8 @@ header
 .value-table
   display: flex
   align-items: center
-  justify-content: center
+  justify-content: flex-start
+  padding: 0 10px 0 16px
   &__icon
     width: 18px
     height: 18px
@@ -583,8 +601,20 @@ header
 .sum-table
   font-weight: bold
 
-.td-mobile-toggle
+.td-mobile-toggle, .visible-xs
   display: none
+
+.visible-xs
+  color: $blue
+  min-width: 70px
+
+
+.number-table
+  font-weight: bold
+  color: $blue
+
+.date-table
+  padding: 10px
 
 //footer
 footer
