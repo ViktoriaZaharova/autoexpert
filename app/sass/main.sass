@@ -70,6 +70,8 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
+  color: #333333
+  background: #fff
 
 html, body
   overflow-x: hidden
@@ -90,24 +92,507 @@ a
 
   &:hover, &:focus
     text-decoration: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 10px
   box-sizing: border-box
   font-family: $default-font
+  font-size: 12px
+  color: #555555
+  height: 36px
+  width: 100%
+  border: 1px solid #EAEAEA
+    radius: 2px
+  &::placeholder
+    color: #555555
   &:hover, &:focus
     outline: none
     box-shadow: none
 
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  font-family: $default-font
+  padding: 0
+  border: none
+    radius: 0
+  margin: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 7.5px 16px
+  border-radius: 2px
+  font-size: 14px
+  font-weight: bold
+
+.btn-border-accent
+  border: 1px solid #B41818
+    radius: 2px
+  font-size: 14px
+  font-weight: bold
+  color: $accent
+  &:hover
+    color: #fff
+    background: #333
+    border-color: #333
+    .svg-icon
+      fill: #fff
+    .fill-none
+      fill: none
+      stroke: #fff
+
+.btn-accent
+  background: $accent
+  color: #fff
+
+
+.fill-none
+  fill: none
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+h1
+  font-size: 24px
+  font-weight: bold
+  width: 100%
+  margin: 0 0 20px
+
+//header
+header
+  padding: 10px 0
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.03)
+  background: #fff
+  border: 1px solid #EAEAEA
+
+.logo
+  display: flex
+  align-items: center
+  max-width: 126px
+  width: 100%
+
+.cabinet-links
+  display: flex
+  align-items: center
+  color: #333333
+  font-size: 13px
+
+  &__icon
+    width: 16px
+    height: 16px
+    min-width: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__text
+    margin: 0 0 0 8px
+
+  &:hover
+    color: $accent
+
+.btn-burger
+  display: none
+  width: 26px
+  cursor: pointer
+  margin: 0 0 0 29px
+
+  span
+    display: block
+    width: 100%
+    height: 2px
+    margin: 0 0 6px
+    background: #333
+    border-radius: 2px
+
+    &:last-child
+      margin: 0
+
+.menu
+  margin: 0 auto
+  flex-wrap: wrap
+  flex-direction: row
+  align-items: center
+
+  .nav-item
+    margin: 0 40px 0 0
+
+    &:last-child
+      margin: 0
+
+  .nav-link
+    padding: 0
+    color: #333333
+    font-weight: bold
+    font-size: 13px
+    display: flex
+    align-items: center
+
+    &:hover
+      color: $accent
+
+      .dropdown-toggle__icon
+        stroke: $accent
+
+    &:after
+      display: none
+
+.dropdown-toggle__icon
+  width: 10px
+  height: 6px
+  margin: 0 0 0 7px
+  display: flex
+  align-items: center
+  justify-content: center
+  stroke: #828282
+  fill: none
+
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 5
+  height: 100%
+  max-width: 220px
+  width: 100%
+  background: #fff
+  overflow-y: auto
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2)
+  padding: 15px
+  cursor: pointer
+
+  &__close
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 15px
+    height: 15px
+    margin: 0 0 8px auto
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 7px
+      top: 0
+      width: 1px
+      height: 100%
+      background: #2C2C2C
+
+    &:before
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(135deg)
+
+  .menu
+    width: 100%
+
+  .nav-item
+    width: 100%
+    margin: 0 0 20px
+
+  .dropdown-toggle__icon
+    width: 6px
+    height: 10px
+    stroke: #333
+
+.dropdown-menu
+  font-size: 13px
+
+//home
+.home
+  margin: 0 0 50px
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  transition: .3s ease
+  background: #fff
+  width: 30px
+  height: 30px
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+  border: none
+    radius: 50%
+  padding: 10px 12px
+  opacity: 1
+  z-index: 1
+
+  .svg-icon
+    stroke: #CACACA
+    fill: none
+
+  &:hover
+    background: $accent
+
+    .svg-icon
+      stroke: #fff
+      fill: none
+
+.slick-prev
+  left: -15px
+
+.slick-next
+  right: -15px
+
+.attention-slider
+  padding: 25px 0
+  border-bottom: 1px solid #EAEAEA
+
+.attention-slider-item
+  width: 100%
+  text-align: center
+  color: #2E73D7
+  font-size: 14px
+  line-height: 20px
+
+  .phone
+    display: inline-block
+    font-weight: bold
+    color: $blue
+
+.btn-search-details
+  color: #B41818
+  font-size: 14px
+  font-weight: bold
+  max-width: 253px
+  justify-content: flex-start
+  &__icon
+    fill: $accent
+    width: 16px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+  &__arrow
+    margin: 0 0 0 auto
+    width: 9px
+    height: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    stroke: $accent
+    fill: none
+
+.form-filter
+  margin: 30px 0 15px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  button
+    width: 127px
+  label
+    margin: 0 30px 15px 0
+    max-width: 160px
+
+
+.form-group
+  display: flex
+  align-items: flex-start
+  margin: 0 20px 0 0
+  &:last-child
+    margin: 0
+    label
+      margin-right: 0
+  label
+    margin: 0 -1px 15px 0
+    max-width: 68px
+    &:last-child
+      margin-right: 0
+
+.nav-tabs
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  border: none
+    radius: 0
+  position: relative
+  z-index: 1
+  .nav-item
+    margin: 0 10px 0 0
+    border: none
+    overflow: hidden
+    &:last-child
+      margin: 0
+  .nav-link
+    border: 1px solid transparent
+      radius: 2px 2px 0 0
+    background: #EAEAEA
+    padding: 12px 10px
+    color: #828282
+    font-size: 14px
+    width: 160px
+    text-align: center
+    transform: translateY(4px)
+  .active
+    border: 1px solid #EAEAEA
+      bottom: none
+    font-weight: bold
+    transform: none
+
+
+
+.tab-content
+  padding: 20px 0 0
+  margin: -2px 0 0
+  border: 1px solid #EAEAEA
+    radius: 2px
+  .card-header
+    display: none
+
+.card
+  border: none
+    radius: 0
+
+.card-body
+  padding: 0
+  border: none
+    radius: 0
+
+.table
+  margin: 0
+  color: #333333
+  font-size: 12px
+  text-align: center
+  width: 100%
+  //border-spacing: 0.5px
+  //border-collapse: collapse
+  td, th
+    vertical-align: middle
+  thead
+    th
+      color: $blue
+      padding: 10px 12px
+      border: none
+        radius: 0
+      box-shadow: none
+  tbody
+    td
+      border: none
+        right: 1px solid #fff
+        bottom: 5px solid #fff
+      line-height: 16px
+      background: #F6F6F6
+      padding: 0
+      &:last-child
+        border-right: none
+      &:first-child
+        background: #E9E9E9
+    tr
+      &:last-child
+        td
+          border-bottom: none
+      &:nth-child(odd)
+        td
+          background: #E0EAF9
+          &:first-child
+            background: #CDDCF2
+
+
+
+.table-sorting
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #2E73D7
+  font-size: 14px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    stroke: $blue
+    width: 7px
+    height: 11px
+    margin: 0 0 0 5px
+  &:hover
+    color: $accent
+
+.bg-green
+  background: #5FBC6F
+
+.bg-blue
+  background: #6D9DE3
+    
+.text-left
+  justify-content: flex-start
+  text-align: left
+
+.status
+  padding: 5px 38px
+  font-size: 12px
+  color: #fff
+  height: 100%
+  min-height: 42px
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.shipment
+  width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  text-align: center
+
+.client-table
+  padding: 5px
+
+.value-table
+  display: flex
+  align-items: center
+  justify-content: center
+  &__icon
+    width: 18px
+    height: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 7px 0 0
+
+.sum-table
+  font-weight: bold
+
+.td-mobile-toggle
+  display: none
 
 //footer
 footer
   text-align: center
   background: #F6F6F7
   padding: 66px 0 52px
+  margin: 70px 0 0
+
 
 .phone
   text-align: center
@@ -115,10 +600,12 @@ footer
   color: #333333
   font-size: 15px
 
+  &:hover
+    color: $accent
+
 .copyright
   color: #888888
   font-size: 14px
-
 
 
 @import "media"
