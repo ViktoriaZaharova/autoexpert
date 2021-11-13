@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Автоэксперт</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__close"></div>
+  <ul class="menu navbar-nav">
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Заказы <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Поиск товаров <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Личный кабинет <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Клиенты <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Инфо <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">Полезности <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-right2"></use></svg></span></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Действие</a>
+        <a class="dropdown-item" href="#">Другое действие</a>
+        <a class="dropdown-item" href="#">Что-то еще здесь</a>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+          <ul class="menu navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Заказы <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Поиск товаров <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Личный кабинет <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Клиенты <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Инфо <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Полезности <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+          </ul>
+
+
+          <a href="#" class="cabinet-links">
+          <span class="cabinet-links__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#user"></use></svg></span>
+            <span class="cabinet-links__text">Вход /Регистрация</span>
+          </a>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--tablet menu-->
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <ul class="menu navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Заказы <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Поиск товаров <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Личный кабинет <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Клиенты <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Инфо <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">Полезности <span class="dropdown-toggle__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Действие</a>
+                <a class="dropdown-item" href="#">Другое действие</a>
+                <a class="dropdown-item" href="#">Что-то еще здесь</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--tablet menu-->
+</header>
+
+<div class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="attention-slider">
+          <div class="slide">
+            <div class="attention-slider-item">
+              <p>Уважаемые партнеры!</p>
+              <p>Обращаем Ваше внимание на расширение нашего ассортимента по грузовым шинам. Теперь Вы можете приобрести
+                у нас восстановленные грузовые шины Michelin. Подробную информацию по наличию и ценам Вы можете получить
+                менеджера или позвонить нам по телефону <a href="tel:+7(495) 598-55-77." class="phone">+7(495)
+                  598-55-77.</a></p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="attention-slider-item">
+              <p>Уважаемые партнеры!</p>
+              <p>Обращаем Ваше внимание на расширение нашего ассортимента по грузовым шинам. Теперь Вы можете приобрести
+                у нас восстановленные грузовые шины Michelin. Подробную информацию по наличию и ценам Вы можете получить
+                менеджера или позвонить нам по телефону <a href="tel:+7(495) 598-55-77." class="phone">+7(495)
+                  598-55-77.</a></p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="attention-slider-item">
+              <p>Уважаемые партнеры!</p>
+              <p>Обращаем Ваше внимание на расширение нашего ассортимента по грузовым шинам. Теперь Вы можете приобрести
+                у нас восстановленные грузовые шины Michelin. Подробную информацию по наличию и ценам Вы можете получить
+                менеджера или позвонить нам по телефону <a href="tel:+7(495) 598-55-77." class="phone">+7(495)
+                  598-55-77.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="info-order">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Информация о заказе</h1>
+
+        <div class="status-order bg-green">
+          <h3>Заказ № F58541252</h3>
+          <p>В логистике / на планировании</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="details-info">
+          <ul class="details-info-list">
+            <li>
+              <p>Дата создания:</p>
+              <span>06.08.2021 14:05</span>
+            </li>
+            <li>
+              <p>Дата отправки:</p>
+              <span>06.08.2021 14:05</span>
+            </li>
+            <li>
+              <p>Клиент:</p>
+              <span>Автоэксперт</span>
+            </li>
+            <li>
+              <p>Общее кол-тво:</p>
+              <span>10 шт.</span>
+            </li>
+            <li>
+              <p>Сумма:</p>
+              <span>85 025 руб.</span>
+            </li>
+            <li>
+              <p>Вид отгрузки:</p>
+              <span>Доставка</span>
+            </li>
+            <li>
+              <p>Склад:</p>
+              <span>8</span>
+            </li>
+            <li>
+              <p>Покупатель:</p>
+              <span>Автоэксперт (Договор №128 др-6 от 07.07.2015)</span>
+            </li>
+          </ul>
+          <ul class="details-info-list">
+            <li>
+              <p>E-mail для чека:</p>
+              <span>info@autoexpert.ru</span>
+            </li>
+            <li>
+              <p>Дата доставки:</p>
+              <span>08.08.2021 09:00 - 21:00</span>
+            </li>
+            <li>
+              <p>Плановая дата прибытия:</p>
+              <span>08.08.2021 09:00 - 21:00</span>
+            </li>
+            <li>
+              <p>Адрес:</p>
+              <span>Москва, ул.Удальцова, дом 8</span>
+            </li>
+            <li>
+              <p>Контактное лицо:</p>
+              <span>Новиков Денис</span>
+            </li>
+            <li>
+              <p>Телефон:</p>
+              <span>+7(495)598-55-77</span>
+            </li>
+            <li>
+              <p>Способ оплаты:</p>
+              <span>Отсрочка</span>
+            </li>
+            <li>
+              <p>Примечание:</p>
+              <span>Нет</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="info-order-box">
+
+          <table class="table table-info-order">
+            <thead>
+            <tr>
+              <th></th>
+              <th>
+                <p>Склад</p>
+              </th>
+              <th>
+                <p>САЕ</p>
+              </th>
+              <th>
+                <p>Марка</p>
+              </th>
+              <th>
+                <p>Описание</p>
+              </th>
+              <th>
+                <p>Наличие</p>
+              </th>
+              <th>
+                <p>Кол-тво</p>
+              </th>
+              <th>
+                <p>Розница</p>
+              </th>
+              <th>
+                <p>Цена</p>
+              </th>
+              <th>
+                <p>Сумма</p>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td></td>
+
+              <td>
+                <div class="number-table">МСК</div>
+              </td>
+              <td>
+                <div class="value-table">
+                  <div class="value-table__icon"><img src="img/truck-wheel.svg" alt=""></div>
+                  <div class="value-table__text">452458</div>
+                </div>
+              </td>
+              <td class="td-mobile-toggle">
+                <div class="td-mobile-toggle__text">
+                  <div class="number-table">МСК</div>
+                  <div class="value-table">
+                    <div class="value-table__icon"><img src="img/truck-wheel.svg" alt=""></div>
+                    <div class="value-table__text">452458</div>
+                  </div>
+                </div>
+                <div class="td-mobile-toggle__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Марка:</div>
+                <div class="balls-table">Hankook</div>
+              </td>
+              <td>
+                <div class="visible-xs">Описание:</div>
+                <div class="client-table">
+                  <p>Hankook Kinergy Eco 2 K435 <br>
+                    195/65 R15 91T</p>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Наличие:</div>
+                <div class="value-table">
+                  <p>52</p>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Кол-тво:</div>
+                <div class="sum-table">4</div>
+              </td>
+              <td>
+                <div class="visible-xs">Розница:</div>
+                <div class="sum-table">3 176</div>
+              </td>
+              <td>
+                <div class="visible-xs">Цена:</div>
+                <div class="sum-table">2 850</div>
+              </td>
+              <td>
+                <div class="visible-xs">Сумма:</div>
+                <div class="sum-table">11 400</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="number-table">МСК</div>
+              </td>
+              <td>
+                <div class="value-table">
+                  <div class="value-table__icon"><img src="img/truck-wheel.svg" alt=""></div>
+                  <div class="value-table__text">524523</div>
+                </div>
+              </td>
+              <td class="td-mobile-toggle">
+                <div class="td-mobile-toggle__text">
+                  <div class="number-table">МСК</div>
+                  <div class="value-table">
+                    <div class="value-table__icon"><img src="img/truck-wheel.svg" alt=""></div>
+                    <div class="value-table__text">524523</div>
+                  </div>
+                </div>
+                <div class="td-mobile-toggle__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Марка:</div>
+                <div class="balls-table">Dynapro</div>
+              </td>
+              <td>
+                <div class="visible-xs">Описание:</div>
+                <div class="client-table">
+                  <p>Dynapro HP RA23 <br>
+                    205/55 R16 94V XL</p>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Наличие:</div>
+                <div class="value-table">
+                  <p>24</p>
+                </div>
+              </td>
+              <td>
+                <div class="visible-xs">Кол-тво:</div>
+                <div class="sum-table">4</div>
+              </td>
+              <td>
+                <div class="visible-xs">Розница:</div>
+                <div class="sum-table">5 400</div>
+              </td>
+              <td>
+                <div class="visible-xs">Цена:</div>
+                <div class="sum-table">4 800</div>
+              </td>
+              <td>
+                <div class="visible-xs">Сумма:</div>
+                <div class="sum-table">19 200</div>
+              </td>
+            </tr>
+            <tr class="total-tr">
+              <td></td>
+              <td>
+                <p>Итого:</p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p>8</p>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="total-sum"><p>30 600</p></div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="btn-group">
+            <a href="#" class="btn btn-border-accent">Отменить доставку</a>
+            <a href="#" class="btn btn-border-accent">Отменить заказ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="comments-order">
+
+          <h3>Комментарии к заказу:</h3>
+          <form method="post" class="form-comment">
+            <label><textarea name="message" placeholder="Ваш комментарий"></textarea></label>
+            <button type="submit" class="btn btn-border-grey">Добавить комментарий</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="history-order">
+          <h3>История изменений заказа</h3>
+
+          <ul class="list-history">
+            <li>
+              <div class="list-history-item">
+                <p>1С</p>
+                <span>06.08.2021 14:05:35</span>
+              </div>
+              <div class="list-history-text">
+                <p>изменен статус заказа с “Отправлен в логистику” на “В логистике / на планировании”;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>1С</p>
+                <span>06.08.2021 14:04:00</span>
+              </div>
+              <div class="list-history-text">
+                <p>изменен статус заказа с “На проверке” на “Отправлен в логистику”;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 14:04:00</span>
+              </div>
+              <div class="list-history-text">
+                <p>изменен статус заказа с “Готов к отгрузке / ожидает оплаты” на “На проверке”;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 14:03:35</span>
+              </div>
+              <div class="list-history-text">
+                <p>заказал доставку;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 14:03:20</span>
+              </div>
+              <div class="list-history-text">
+                <p>указал адрес доставки;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 14:02:50</span>
+              </div>
+              <div class="list-history-text">
+                <p>изменен статус заказа с “Отправлен” на “Готов к отгрузке / ожидает оплаты”;</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 14:02:00</span>
+              </div>
+              <div class="list-history-text">
+                <p>отправил заказ</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 13:58:45</span>
+              </div>
+              <div class="list-history-text">
+                <p>добавил товар: 452458 (4, МСК)</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-history-item">
+                <p>Автоэксперт</p>
+                <span>06.08.2021 13:52:25</span>
+              </div>
+              <div class="list-history-text">
+                <p>добавил товар: 586154 (4, МСК)</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-border-grey btn-history">История статусов</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="tel:+74955985577" class="phone">+7(495) 598-55-77</a>
+        <div class="copyright">2021 © Автоэксперт. Обслуживаем автомобили. Думаем о людях.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

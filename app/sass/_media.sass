@@ -87,6 +87,21 @@
   .tab-content
     padding: 10px 0 0
 
+  .list-history-item
+    width: 220px
+
+  .list-history-text
+    width: calc(100% - 220px)
+
+  .form-cabinet-col
+    padding: 0 20px 0 0
+    &:last-child
+      padding: 0 0 0 20px
+
+  .form-cabinet
+    button
+      margin: 0 auto
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .container
@@ -95,6 +110,54 @@
   .status
     min-height: 74px
 
+  .list-history-text
+    padding: 7px 15px 7px 24px
+    min-height: 50px
+    display: flex
+    align-items: center
+    width: calc(100% - 135px)
+    background: #fff url("../img/figure-tablet.svg") no-repeat left center
+      size: cover
+
+  .list-history-item
+    width: 135px
+    span
+      font-size: 12px
+
+  .list-history li
+    padding: 0 0 0 19px
+    margin: 0 0 13px
+    &:before
+      top: 50%
+      transform: translateY(-50%)
+
+  .form-comment button
+    margin: 25px auto 0
+
+  .details-info-list
+    width: 100%
+    padding: 0
+    border: none
+    &:last-child
+      padding: 0
+
+  .status-order
+    margin: 0 0 30px
+
+  .details-info
+    padding: 0 0 25px
+    margin: 0 0 25px
+
+  .info-order-box
+    padding: 0 0 25px
+    margin: 0 0 30px
+
+  .history-order
+    margin: 45px 0 0
+
+  .form-cabinet-col
+    &:before
+      height: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 700px)
@@ -105,6 +168,24 @@
   .table
     font-size: 10px
 
+  .form-cabinet-col
+    width: 100%
+    max-width: none
+    padding: 0
+    &:before
+      display: none
+    &:last-child
+      padding: 0
+
+  .form-cabinet
+    h3
+      font-size: 18px
+
+    label
+      max-width: none
+
+  .cabinet-box
+    margin: 0 0 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 650px)
@@ -191,6 +272,8 @@
   .td-mobile-toggle__text
     display: flex
     align-items: center
+    .number-table
+      min-width: 70px
 
   .td-mobile-toggle__icon
     width: 9px
@@ -237,6 +320,30 @@
 
   .status.bg-blue
     color: $accent
+
+  .table-info-order
+    tbody
+      tr.total-tr
+        display: flex
+        justify-content: flex-start
+        padding: 9px 15px
+        td
+          padding: 0
+          &:nth-child(7), &:last-child
+
+            display: block
+          .last-child
+            text-align: right
+          .total-sum
+            text-align: right
+        td:nth-child(2)
+          width: 70px
+          min-width: 70px
+          display: block !important
+
+  .inp-file__custom
+    width: 140px
+    margin: 0 11px 0 0
 
 @media (max-width: 576px)
   .header-bottom
@@ -296,3 +403,55 @@
     font-size: 12px
     .phone
       font-size: 12px
+
+  .list-history
+    padding: 0 0 0 3px
+    li
+      margin: 0 0 20px
+      padding: 0 0 0 12px
+      &:before
+        left: -7px
+        top: 8px
+        transform: none
+      &:last-child
+        margin: 0
+
+  .list-history-text
+    width: 100%
+    padding: 0
+    background: #fff
+    min-height: auto
+    margin: 10px 0 0
+
+  .list-history-item
+    width: 100%
+
+  .btn-history
+    margin: 26px auto 0
+
+  .history-order
+    margin: 60px 0 0
+    h3
+      margin: 0 0 20px
+
+  .comments-order h3, .history-order h3
+    font-size: 18px
+
+@media (max-width: 480px)
+  .btn-group
+    flex-direction: column
+    .btn
+      max-width: none
+      margin: 0 auto 15px
+
+  .info-order-box
+    padding: 0 0 30px
+
+
+  .status-order
+    margin: 0 0 74px
+    padding: 20px 50px
+    width: 100%
+
+  .details-info
+    margin: 0 0 20px
